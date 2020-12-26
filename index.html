@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1 class="page-title">Catch in 120 seconds</h1>
+        <div class="overlay-text visible">
+            <p>Click to start</p>
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            <p>GAME OVER</p>
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+        <div id="victory-text" class="overlay-text">
+            <p>VICTORY</p>
+            <span id="info-flip" class="overlay-text-small"></span>
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+
+        <div class="game-container">
+
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time: <span id="time-remaining">000</span>
+                </div>
+
+                <div class="game-info">
+                    Flips: <span id="flips">0</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/1-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face ">
+                    <img class="card-value" src="./img/1-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/2-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/2-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/3-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/3-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/4-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/4-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/5-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/5-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/6-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/6-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/7-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/7-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/8-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/8-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/9-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/9-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/10-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/10-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/11-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/11-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/12-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/12-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/13-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/13-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/14-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/14-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/15-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/15-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/16-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="shaker" src="./img/0-shaker.png" alt="shaker">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="./img/16-cocktail.png" alt="cocktail">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+</html>
